@@ -22,6 +22,9 @@ final class HomeViewModelTest: XCTestCase {
         let expectationSuccess = expectation(description: "Test Get Categories API Success")
         viewModel.getAllCategoriesFilm { categories in
             XCTAssertEqual(categories.count, 4)
+            let category = categories[0]
+            XCTAssertEqual(category.id, 26)
+            XCTAssertEqual(category.name, "Action")
             expectationSuccess.fulfill()
         } failure: { _ in
             

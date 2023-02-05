@@ -86,7 +86,7 @@ class SearchMoviesVC: UIViewController, XibViewController {
     }
     
     @objc func search(isShowLoading: Bool = false) {
-        guard let key = tfSearch.text else {
+        guard let key = tfSearch.text, key.count >= 2 else {
             return
         }
         
@@ -139,6 +139,13 @@ extension SearchMoviesVC: UITableViewDataSource {
         case .blank:
             guard let blankCell = tableView.reusableCell(type: ItemNotFoundMovieCell.self, indexPath: indexPath) else {
                 return UITableViewCell()
+            }
+            blankCell.didTapTryAgainButton = { [weak self] in
+                guard let self = self else {
+                    return
+                }
+                self.tfSearch.text = ""
+                self.tfSearch.becomeFirstResponder()
             }
             return blankCell
         case .loadMore:
@@ -195,6 +202,8 @@ extension SearchMoviesVC: ItemSearchMovieCellDelegate {
         viewModel.updateFavoriteMovie(indexPath: indexPath)
     }
 }
+
+// MARK: - MovieDetailVCDelegate
 
 extension SearchMoviesVC: MovieDetailVCDelegate {
     func didUpdateFavoriteMovie(id: Int, isFavorite: Bool) {

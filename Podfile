@@ -5,10 +5,7 @@ def share_pod
   pod 'lottie-ios', '3.5.0'
   pod 'MBProgressHUD', '~> 1.2.0'
   pod 'R.swift', '6.1.0'
-  pod 'Alamofire'
-  pod 'Kingfisher', '~> 5.15'
   pod 'SDWebImage'
-  pod "ESPullToRefresh"
   pod 'IQKeyboardManager'
   pod 'Toast-Swift', '~> 5.0.1'
 end

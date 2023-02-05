@@ -216,7 +216,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.file` struct is generated, and contains static references to 16 files.
+  /// This `R.file` struct is generated, and contains static references to 17 files.
   struct file {
     /// Resource file `Loading_Animation.json`.
     static let loading_AnimationJson = Rswift.FileResource(bundle: R.hostingBundle, name: "Loading_Animation", pathExtension: "json")
@@ -250,6 +250,8 @@ struct R: Rswift.Validatable {
     static let nunitoSansSemiBoldItalicTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "NunitoSans-SemiBoldItalic", pathExtension: "ttf")
     /// Resource file `OFL.txt`.
     static let oflTxt = Rswift.FileResource(bundle: R.hostingBundle, name: "OFL", pathExtension: "txt")
+    /// Resource file `README.md`.
+    static let readmeMd = Rswift.FileResource(bundle: R.hostingBundle, name: "README", pathExtension: "md")
 
     /// `bundle.url(forResource: "Loading_Animation", withExtension: "json")`
     static func loading_AnimationJson(_: Void = ()) -> Foundation.URL? {
@@ -344,6 +346,12 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "OFL", withExtension: "txt")`
     static func oflTxt(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.oflTxt
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "README", withExtension: "md")`
+    static func readmeMd(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.readmeMd
       return fileResource.bundle.url(forResource: fileResource)
     }
 
