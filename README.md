@@ -28,27 +28,20 @@ Follow by SOLID (define the protocol to init ViewController followed by MVVM str
 
 ## Structure:
 
-<img src= "images/structure.png" width="400" >
-
-- [x] Utils: Some common functions.
-        +Constant.swift: Store some constant
-        
+- [x] CoreData: Folder contains Entity CoreData and class to insert, fetch and update to the local
 - [x] Font: Folder of font source
-
 - [x] Service: Networking service.
-
 - [x] Screens: ViewController followed by MVVM.
-
 <img src= "images/mvvm.jpeg" width="400" >
-
     Model-View-ViewModel (MVVM) is a structural design pattern that separates objects into three distinct groups:
 
     - Models hold application data. They’re usually structs or simple classes.
     - Views display visual elements and controls on the screen. They’re typically subclasses of UIView.
     - View models transform model information into values that can be displayed on a view. They’re usually classes, so they can be passed around as references.
+- [x] CustomView: Some Custom UI
 - [x] Extensions: Some extensions of classes.
-- [x] TestNewsTest: The Test of ViewModel
-- [x] TestNewsUITests: The Test of UI
+- [x] TestMovieTest: The Test of ViewModel
+- [x] TestMovieUITests: The Test of UI
 
 ## Libraries in Pods:
 [Kingfisher](https://github.com/onevcat/Kingfisher): Load uiimageview from online
@@ -63,22 +56,16 @@ Follow by SOLID (define the protocol to init ViewController followed by MVVM str
         
 ## Checklist
         
-- [x] Design and develop the required screens using Swift and UIKit
-
-- [x] Design app's architecture (recommend VIPER or MVP, MVVM but not mandatory)
-
-- [x] UI should be looks like in attachment.
-
-- [x] Write UnitTests
-
-- [x] Acceptance Tests
-
-- [x] Exception handling
-
-- [x] Caching handling
-
-- [x] Code Logic test
-
+- [x] 1. Design and develop the required screens using Swift and UIKit
+- [x] 2. Design app's architecture (recommend VIPER or MVP, MVVM but not mandatory)
+- [x] 3. Minimum iOS version should be iOS 13
+- [x] 4. Use Combine Framework wherever possible / applicable
+- [x] 5. Use diffable data source for table and collection views
+- [x] 6. Compositional layout for collection views is a plus.
+- [x] 7. Use AutoLayout. Storyboards, Xibs or programmatically created constraints is allowed
+- [x] 8. Follow standard architectural patterns (preferably MVVM)
+- [x] 9. Layout should be user friendly and follow Human Interface Guidelines by Apple
+- [x] 10. Make sure your progress is properly conveyed through local git commit history
 
 ## Requirements
 
@@ -120,7 +107,7 @@ We would love you for the contribution of my code to be more clear in the future
 
 Your Name – [@TungPhan](https://www.facebook.com/tung.teotop/) – phanthanhtung.pt@gmail.com
 
-[https://github.com/vuakungfuvt/TestNew](https://github.com/vuakungfuvt/TestNABWeather)
+[https://github.com/vuakungfuvt/TestNew](https://github.com/vuakungfuvt/TestMovie)
 
 [swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
 [swift-url]: https://swift.org/
