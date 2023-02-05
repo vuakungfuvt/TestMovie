@@ -45,11 +45,17 @@ Follow by SOLID (define the protocol to init ViewController followed by MVVM str
 
 ## Libraries in Pods:
 [Lottie-iOS](https://github.com/airbnb/lottie-ios): Load animation from json file
+
 [MBProgressHUD](https://github.com/jdg/MBProgressHUD): Show progress loading
+
 [R.swift](https://github.com/mac-cain13/R.swift): Manage Resource in Swift
+
 [SDWebImage](https://github.com/SDWebImage): Load image from URL
+
 [Toast-Swift](https://github.com/scalessec/Toast-Swift): Make Toast notification
+
 [IQKeyboardManagerSwift](https://github.com/hackiftekhar/IQKeyboardManager): handle keyboard events
+
         
 ## Checklist
         
