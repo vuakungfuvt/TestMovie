@@ -44,14 +44,11 @@ Follow by SOLID (define the protocol to init ViewController followed by MVVM str
 - [x] TestMovieUITests: The Test of UI
 
 ## Libraries in Pods:
-[Kingfisher](https://github.com/onevcat/Kingfisher): Load uiimageview from online
-
+[Lottie-iOS](https://github.com/airbnb/lottie-ios): Load animation from json file
 [MBProgressHUD](https://github.com/jdg/MBProgressHUD): Show progress loading
-
-[Alamofire](https://github.com/Alamofire/Alamofire): Load restfull API
-
-[ESPullToRefresh](https://github.com/eggswift/pull-to-refresh): Pull to refresh of UITableView.
-
+[R.swift](https://github.com/mac-cain13/R.swift): Manage Resource in Swift
+[SDWebImage](https://github.com/SDWebImage): Load image from URL
+[Toast-Swift](https://github.com/scalessec/Toast-Swift): Make Toast notification
 [IQKeyboardManagerSwift](https://github.com/hackiftekhar/IQKeyboardManager): handle keyboard events
         
 ## Checklist
@@ -107,7 +104,7 @@ We would love you for the contribution of my code to be more clear in the future
 
 Your Name – [@TungPhan](https://www.facebook.com/tung.teotop/) – phanthanhtung.pt@gmail.com
 
-[https://github.com/vuakungfuvt/TestNew](https://github.com/vuakungfuvt/TestMovie)
+[https://github.com/vuakungfuvt/TestMovie](https://github.com/vuakungfuvt/TestMovie)
 
 [swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
 [swift-url]: https://swift.org/
