@@ -30,6 +30,8 @@ class HomeVC: UIViewController, XibViewController {
         setupView()
     }
     
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.view.setGradientBackground(colorTop: R.color.gradientTop()!, colorBottom: R.color.gradientBottom()!)
@@ -47,7 +49,7 @@ class HomeVC: UIViewController, XibViewController {
             self.updateIndicator(indexPath: indexPath)
         }
         collectionView.selectItem(at: indexPath, animated: false, scrollPosition: .left)
-        setupPageView()
+        setupPageView() 
     }
     
     private func setupPageView() {

@@ -87,6 +87,7 @@ class SearchMoviesVC: UIViewController, XibViewController {
     
     @objc func search(isShowLoading: Bool = false) {
         guard let key = tfSearch.text, key.count >= 2 else {
+            viewModel.clearData()
             return
         }
         
@@ -114,7 +115,11 @@ class SearchMoviesVC: UIViewController, XibViewController {
     }
     
     @objc func refresh() {
-        self.viewModel.refresh(key: tfSearch.text!)
+        guard let text = tfSearch.text, text.count >= 2 else {
+            self.refreshControl.endRefreshing()
+            return
+        }
+        self.viewModel.refresh(key: text)
     }
 }
 

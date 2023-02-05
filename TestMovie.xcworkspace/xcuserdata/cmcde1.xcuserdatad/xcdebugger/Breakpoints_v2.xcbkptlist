@@ -19,54 +19,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5EC05AB7-4F31-4499-943A-80B5EB8D8A32"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestMovie/Screen/MovieDetail/View/MovieDetailVC/MovieDetailVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "setupView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DD3AD0E0-D456-4A98-A7D8-F661DC4242CB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestMovie/Screen/MovieDetail/View/MovieDetailVC/MovieDetailVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "setupView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CDF3F3FA-06BE-4A2C-8649-A7F91493D16F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestMovie/Screen/Home/View/HomeVC/HomeVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "211"
-            endingLineNumber = "211"
-            landmarkName = "didUpdateFavoriteMovie(id:isFavorite:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "B0A28253-97EC-4E75-8234-8AAFC035A37C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -74,8 +26,8 @@
             filePath = "TestMovie/Screen/Home/View/HomeVC/HomeVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
             landmarkName = "didTapFavorite(movie:isFavorite:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,57 +42,9 @@
             filePath = "TestMovie/Screen/Home/ViewModel/HomeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "updateFavoriteMovie(movie:isFavorite:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F689B25B-7310-4290-81D0-DDF54330BA85 - 6877da4f5f539829"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TestMovie.HomeViewModel.updateFavoriteMovie(movie: TestMovie.Movie, isFavorite: Swift.Bool) -&gt; ()"
-                  moduleName = "TestMovie"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cmcde1/Desktop/TestMovie/TestMovie/Screen/Home/ViewModel/HomeViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "F689B25B-7310-4290-81D0-DDF54330BA85 - 9f1c574f500b8c99"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TestMovieTests.HomeViewModel.updateFavoriteMovie(movie: TestMovieTests.Movie, isFavorite: Swift.Bool) -&gt; ()"
-                  moduleName = "TestMovieTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cmcde1/Desktop/TestMovie/TestMovie/Screen/Home/ViewModel/HomeViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E0E03117-0B08-4B59-976B-8E8BD91EF5EF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestMovie/CoreData/MovieLocalData.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "saveOrUpdate(movie:isFavorite:success:failure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -154,120 +58,9 @@
             filePath = "TestMovie/Screen/Home/ViewModel/HomeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "updateFavoriteMovie(movie:isFavorite:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "16066C5E-63AA-4765-A829-8DC2006A393F - 6877da4f5f539829"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TestMovie.HomeViewModel.updateFavoriteMovie(movie: TestMovie.Movie, isFavorite: Swift.Bool) -&gt; ()"
-                  moduleName = "TestMovie"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cmcde1/Desktop/TestMovie/TestMovie/Screen/Home/ViewModel/HomeViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "16066C5E-63AA-4765-A829-8DC2006A393F - 9f1c574f500b8c99"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TestMovieTests.HomeViewModel.updateFavoriteMovie(movie: TestMovieTests.Movie, isFavorite: Swift.Bool) -&gt; ()"
-                  moduleName = "TestMovieTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cmcde1/Desktop/TestMovie/TestMovie/Screen/Home/ViewModel/HomeViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1EA4EDC4-A156-42D7-ADF2-6B8839CAE3AC"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestMovie/Screen/SearchMovies/ViewModel/SearchMoviesViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "updateFavoriteMovie(indexPath:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "1EA4EDC4-A156-42D7-ADF2-6B8839CAE3AC - 6960a5541cf27fc1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TestMovie.SearchMoviesViewModel.updateFavoriteMovie(indexPath: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "TestMovie"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cmcde1/Desktop/TestMovie/TestMovie/Screen/SearchMovies/ViewModel/SearchMoviesViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "92"
-                  endingLineNumber = "92"
-                  offsetFromSymbolStart = "1744">
-               </Location>
-               <Location
-                  uuid = "1EA4EDC4-A156-42D7-ADF2-6B8839CAE3AC - bcde2526e0c70d24"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in TestMovie.SearchMoviesViewModel.updateFavoriteMovie(indexPath: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "TestMovie"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cmcde1/Desktop/TestMovie/TestMovie/Screen/SearchMovies/ViewModel/SearchMoviesViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "92"
-                  endingLineNumber = "92"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  uuid = "1EA4EDC4-A156-42D7-ADF2-6B8839CAE3AC - 3aad9d1c7f4d4fc0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Error) -&gt; () in TestMovie.SearchMoviesViewModel.updateFavoriteMovie(indexPath: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "TestMovie"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cmcde1/Desktop/TestMovie/TestMovie/Screen/SearchMovies/ViewModel/SearchMoviesViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
-                  offsetFromSymbolStart = "64">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5EDB10EF-D7ED-4ABF-A337-11532C34863F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestMovie/Screen/SearchMovies/View/SearchMoviesVC/SearchMoviesVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "setupView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -284,6 +77,70 @@
             startingLineNumber = "28"
             endingLineNumber = "28"
             landmarkName = "testGetAllCategories()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E2853E1-1C2B-4F7F-B9BA-132842846E2C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestMovie/Screen/SearchMovies/ViewModel/SearchMoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "searchMovies(key:success:failure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2E2853E1-1C2B-4F7F-B9BA-132842846E2C - 94898cd4e0f52010"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (TestMovie.NetworkServiceError) -&gt; () in TestMovie.SearchMoviesViewModel.searchMovies(key: Swift.String, success: (Swift.Int, Swift.Array&lt;TestMovie.Movie&gt;) -&gt; (), failure: (TestMovie.NetworkServiceError) -&gt; ()) -&gt; ()"
+                  moduleName = "TestMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cmcde1/TestMovie/TestMovie/Screen/SearchMovies/ViewModel/SearchMoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  uuid = "2E2853E1-1C2B-4F7F-B9BA-132842846E2C - c5bf0f37d48db09a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #2 (TestMovie.NetworkServiceError) -&gt; () in TestMovie.SearchMoviesViewModel.searchMovies(key: Swift.String, success: (Swift.Int, Swift.Array&lt;TestMovie.Movie&gt;) -&gt; (), failure: (TestMovie.NetworkServiceError) -&gt; ()) -&gt; ()"
+                  moduleName = "TestMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cmcde1/TestMovie/TestMovie/Screen/SearchMovies/ViewModel/SearchMoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF635998-8658-4F51-BDAF-C2ADF7FDCEB9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestMovie/Screen/SearchMovies/ViewModel/SearchMoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "searchMovies(key:success:failure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

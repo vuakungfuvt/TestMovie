@@ -16,10 +16,5 @@ class GlobalVariables: NSObject {
     override init() {
         super.init()
         
-        DispatchQueue.main.async {
-            MovieLocalData.shared.fetchAllData().forEach {
-                self.favoriteMovies["\($0.id)"] = $0.isFavorite
-            }
-        }
     }
 }

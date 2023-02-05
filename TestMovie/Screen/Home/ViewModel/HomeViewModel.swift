@@ -24,6 +24,7 @@ class HomeViewModel {
     func getAllCategoriesFilm(success: @escaping (([MovieCategory]) -> Void), failure: @escaping ((NetworkServiceError) -> Void)) {
         service.getAllMovieCategories { categories in
             self.allCategories = categories
+            GlobalVariables.shared.movieCategories = categories
             success(categories)
         } failure: { error in
             failure(error)
@@ -39,4 +40,5 @@ class HomeViewModel {
         
         GlobalVariables.shared.favoriteMovies["\(movie.id)"] = isFavorite
     }
+
 }

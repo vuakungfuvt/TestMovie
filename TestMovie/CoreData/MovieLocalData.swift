@@ -17,10 +17,17 @@ class MovieLocalData: NSObject {
         super.init()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         self.context = appDelegate.persistentContainer.viewContext
+        fetchAllData().forEach {
+            GlobalVariables.shared.favoriteMovies["\($0.id)"] = $0.isFavorite
+        }
     }
     
     init(context: NSManagedObjectContext) {
+        super.init()
         self.context = context
+        fetchAllData().forEach {
+            GlobalVariables.shared.favoriteMovies["\($0.id)"] = $0.isFavorite
+        }
     }
     
     func saveOrUpdate(movie: MovieData, isFavorite: Bool = false, success: () -> Void, failure: (_ error: Error) -> Void) {

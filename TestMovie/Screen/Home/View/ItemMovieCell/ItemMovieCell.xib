@@ -26,7 +26,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="180" height="444"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-movie-test" translatesAutoresizingMaskIntoConstraints="NO" id="75u-ME-Ssd">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-movie-test" translatesAutoresizingMaskIntoConstraints="NO" id="75u-ME-Ssd">
                         <rect key="frame" x="0.0" y="0.0" width="180" height="252"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="75u-ME-Ssd" secondAttribute="height" multiplier="5/7" id="8Aw-qN-hv3"/>

@@ -102,4 +102,9 @@ class SearchMoviesViewModel {
         }
         return IndexPath(row: index, section: 0)
     }
+    
+    func clearData() {
+        self.movies = []
+        self.reloadTableView?() 
+    }
 }
