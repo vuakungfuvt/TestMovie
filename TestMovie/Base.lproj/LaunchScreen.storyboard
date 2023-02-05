@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-bg" translatesAutoresizingMaskIntoConstraints="NO" id="YIw-u0-a3b">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tPp-IZ-Wif">
+                                <rect key="frame" x="146.66666666666666" y="351" width="100" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-fivefilm" translatesAutoresizingMaskIntoConstraints="NO" id="j4J-VC-wba">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="HVT-rj-dfd"/>
+                                            <constraint firstAttribute="width" constant="100" id="Y7S-Zw-I7r"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-logo-nav" translatesAutoresizingMaskIntoConstraints="NO" id="cYR-eg-t4h">
+                                        <rect key="frame" x="9.3333333333333428" y="100" width="81" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="1Nf-S2-Fex"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="bgDefault"/>
+                        <constraints>
+                            <constraint firstItem="tPp-IZ-Wif" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="03A-cR-cns"/>
+                            <constraint firstItem="YIw-u0-a3b" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="E2R-Ua-i4A"/>
+                            <constraint firstAttribute="bottom" secondItem="YIw-u0-a3b" secondAttribute="bottom" id="h6f-vM-h2S"/>
+                            <constraint firstItem="tPp-IZ-Wif" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mAB-iK-YK2"/>
+                            <constraint firstItem="YIw-u0-a3b" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="pae-Py-Kno"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YIw-u0-a3b" secondAttribute="trailing" id="vx3-hQ-fJd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic-bg" width="374" height="812"/>
+        <image name="ic-fivefilm" width="1024" height="1024"/>
+        <image name="ic-logo-nav" width="81" height="16"/>
+        <namedColor name="bgDefault">
+            <color red="0.12156862745098039" green="0.10588235294117647" blue="0.090196078431372548" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (5.6.4)
+  - ESPullToRefresh (2.9.3)
+  - IQKeyboardManager (6.5.10)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
+  - lottie-ios (3.5.0)
+  - MBProgressHUD (1.2.0)
+  - R.swift (6.1.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - SDWebImage (5.14.2):
+    - SDWebImage/Core (= 5.14.2)
+  - SDWebImage/Core (5.14.2)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - ESPullToRefresh
+  - IQKeyboardManager
+  - Kingfisher (~> 5.15)
+  - lottie-ios (= 3.5.0)
+  - MBProgressHUD (~> 1.2.0)
+  - R.swift (= 6.1.0)
+  - SDWebImage
+  - Toast-Swift (~> 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ESPullToRefresh
+    - IQKeyboardManager
+    - Kingfisher
+    - lottie-ios
+    - MBProgressHUD
+    - R.swift
+    - R.swift.Library
+    - SDWebImage
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  ESPullToRefresh: 0d68daa602b343c81753a1b95e09fd0bfcddfd40
+  IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  lottie-ios: c55158d67d0629a260625cc2ded2052b829e3c3e
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  SDWebImage: b9a731e1d6307f44ca703b3976d18c24ca561e84
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 79fe2518ba5f97cd02345dc6bf50d1cd142ff2b5
+
+COCOAPODS: 1.11.3

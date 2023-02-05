@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ItemNotFoundMovieCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemNotFoundMovieCell" rowHeight="699" id="KGk-i7-Jjw" customClass="ItemNotFoundMovieCell" customModule="TestMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="429"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="411" height="429"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-notfound" translatesAutoresizingMaskIntoConstraints="NO" id="8je-T3-wd3">
+                        <rect key="frame" x="133" y="91" width="145" height="145"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="145" id="Ray-Ro-fLm"/>
+                            <constraint firstAttribute="width" constant="145" id="xYb-cd-oSP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry!!! No movies found with the above keyword" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15n-0g-5Qz">
+                        <rect key="frame" x="60" y="266" width="291" height="44"/>
+                        <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                        <color key="textColor" red="0.46666666670000001" green="0.5450980392" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsK-nx-bJE">
+                        <rect key="frame" x="103" y="354" width="205" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="205" id="AZb-O9-ej8"/>
+                            <constraint firstAttribute="height" constant="44" id="gR8-br-b2N"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="16"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Try again">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="appTintColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="btnTryAgainTouchUpInside:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xz4-kM-H3G"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="8je-T3-wd3" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="FT6-O3-ge3"/>
+                    <constraint firstItem="bsK-nx-bJE" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Ghs-x1-dX1"/>
+                    <constraint firstItem="bsK-nx-bJE" firstAttribute="top" secondItem="15n-0g-5Qz" secondAttribute="bottom" constant="44" id="LfD-7p-zRW"/>
+                    <constraint firstAttribute="trailing" secondItem="15n-0g-5Qz" secondAttribute="trailing" constant="60" id="UoA-yD-3om"/>
+                    <constraint firstItem="15n-0g-5Qz" firstAttribute="top" secondItem="8je-T3-wd3" secondAttribute="bottom" constant="30" id="Xo5-ZE-Lbf"/>
+                    <constraint firstItem="15n-0g-5Qz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="cHG-0B-fS7"/>
+                    <constraint firstItem="8je-T3-wd3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="80" id="g4Q-8a-sOd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="bsK-nx-bJE" secondAttribute="bottom" constant="20" id="zX7-xF-GOi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnTryAgain" destination="bsK-nx-bJE" id="6xU-Cn-R0C"/>
+            </connections>
+            <point key="canvasLocation" x="222.46376811594206" y="305.02232142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic-notfound" width="145" height="145"/>
+        <namedColor name="appTintColor">
+            <color red="0.97254901960784312" green="0.44705882352941179" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
