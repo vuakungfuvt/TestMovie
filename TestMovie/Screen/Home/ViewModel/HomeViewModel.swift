@@ -12,7 +12,7 @@ class HomeViewModel {
     // MARK: - Variables
     
     var allCategories: [MovieCategory] = []
-    let service: MovieDataService
+    private var service: MovieDataService
     var showErrorMessage: ((_ message: String) -> Void)?
     private let movieLocalData: MovieLocalData!
     
@@ -39,6 +39,10 @@ class HomeViewModel {
         }
         
         GlobalVariables.shared.favoriteMovies["\(movie.id)"] = isFavorite
+    }
+    
+    func setAdapter(service: MovieDataService) {
+        self.service = service
     }
 
 }

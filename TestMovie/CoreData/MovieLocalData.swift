@@ -15,11 +15,6 @@ class MovieLocalData: NSObject {
     
     override init() {
         super.init()
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        self.context = appDelegate.persistentContainer.viewContext
-        fetchAllData().forEach {
-            GlobalVariables.shared.favoriteMovies["\($0.id)"] = $0.isFavorite
-        }
     }
     
     init(context: NSManagedObjectContext) {
@@ -82,4 +77,21 @@ class MovieLocalData: NSObject {
         guard let result = try? context.fetch(fetchMovie).first else { return }
         result.isFavorite = isFavorite
     }
+    
+    func setUpInMemoryManagedObjectContext() -> NSManagedObjectContext {
+            let moduleName = "TestMovie"
+            do {
+                let managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+                let modelURL = Bundle.main.url(forResource: moduleName, withExtension:"momd")
+                let newObjectModel = NSManagedObjectModel.init(contentsOf: modelURL!)
+                let persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel : newObjectModel!)
+                try  persistentStoreCoordinator.addPersistentStore(ofType: NSInMemoryStoreType, configurationName: nil, at: nil, options: nil)
+
+                managedObjectContext.persistentStoreCoordinator = persistentStoreCoordinator
+                return managedObjectContext
+            } catch let error as NSError {
+            }
+            return NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+        } 
 }
+

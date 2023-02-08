@@ -85,7 +85,10 @@ class HomeVC: UIViewController, XibViewController {
     }
     
     func initData() {
-        self.viewModel = HomeViewModel(service: MovieAPI(), movieLocalData: MovieLocalData())
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        self.viewModel = HomeViewModel(service: MovieAPI(), movieLocalData: MovieLocalData(context: context))
         self.widthCells = homeTypes.compactMap {
             $0.name.width(withConstrainedHeight: 40, font: UIFont.bold(size: 16)) + 20
         }

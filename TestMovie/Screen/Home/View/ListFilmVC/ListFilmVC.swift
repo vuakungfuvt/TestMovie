@@ -59,7 +59,9 @@ class ListFilmVC: UIViewController, XibViewController {
         }
         
         viewModel.showErrorMessage = { [weak self] message in
-            self?.showErrorMessage(errorContent: message)
+            DispatchQueue.main.async {
+                self?.showErrorMessage(errorContent: message)
+            }
         }
         
         viewModel.noticeUpdateFavorite = { [weak self] isFavorite in

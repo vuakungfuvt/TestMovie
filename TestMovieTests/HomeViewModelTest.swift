@@ -11,14 +11,18 @@ import XCTest
 final class HomeViewModelTest: XCTestCase {
     
     private var viewModel: HomeViewModel!
+    private var localData: MovieLocalData!
 
     override func setUp() {
-        self.viewModel = HomeViewModel(service: MovieMockDataFailure())
+        let context = MovieLocalData.shared.setUpInMemoryManagedObjectContext()
+        localData = MovieLocalData(context: context)
+        
+        self.viewModel = HomeViewModel(service: MovieMockDataFailure(), movieLocalData: localData)
     }
 
     func testGetAllCategories() {
         
-        viewModel = HomeViewModel(service: MovieMockDataSuccess())
+        viewModel.setAdapter(service: MovieMockDataSuccess())
         let expectationSuccess = expectation(description: "Test Get Categories API Success")
         viewModel.getAllCategoriesFilm { categories in
             XCTAssertEqual(categories.count, 4)
@@ -31,7 +35,7 @@ final class HomeViewModelTest: XCTestCase {
         }
         wait(for: [expectationSuccess], timeout: 1)
         
-        viewModel = HomeViewModel(service: MovieMockDataFailure())
+        viewModel.setAdapter(service: MovieMockDataFailure())
         let expectationFailure = expectation(description: "Test Get Categories API Success")
         viewModel.getAllCategoriesFilm(success: { categories in
         }) { error in
