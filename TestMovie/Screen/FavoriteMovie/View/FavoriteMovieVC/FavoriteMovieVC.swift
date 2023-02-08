@@ -15,7 +15,7 @@ class FavoriteMovieVC: UIViewController, XibViewController {
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Variables
-    private let viewModel = FavoriteMoviesViewModel()
+    private var viewModel: FavoriteMoviesViewModel!
     
     // MARK: - ViewController life circle
     
@@ -52,6 +52,9 @@ class FavoriteMovieVC: UIViewController, XibViewController {
     }
     
     func initData() {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        self.viewModel = FavoriteMoviesViewModel(movieLocalData: MovieLocalData(context: context))
         viewModel.reloadTableView = { [weak self] in
             self?.tableView.reloadData()
         }

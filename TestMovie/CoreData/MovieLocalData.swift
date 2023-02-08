@@ -58,7 +58,7 @@ class MovieLocalData: NSObject {
     
     func fetchAllData() -> [MovieLocal] {
         let fetchMovie: NSFetchRequest<MovieLocal> = MovieLocal.fetchRequest()
-        guard let result = try? context.fetch(fetchMovie) else {
+        guard let result: [MovieLocal] = try? context.fetch(fetchMovie) else {
             return []
         }
         return result
@@ -67,8 +67,8 @@ class MovieLocalData: NSObject {
     func getMovieLocal(id: String) -> MovieLocal? {
         let fetchMovie: NSFetchRequest<MovieLocal> = MovieLocal.fetchRequest()
         fetchMovie.predicate = NSPredicate(format: "id == %@", "\(id)")
-        guard let result = try? context.fetch(fetchMovie) else { return nil }
-        return result.first
+        guard let result = try? context.fetch(fetchMovie).first else { return nil }
+        return result
     }
     
     func updateFavoriteMovie(id: String, isFavorite: Bool) {

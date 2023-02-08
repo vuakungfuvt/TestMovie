@@ -16,7 +16,7 @@ struct ItemSearchMovieViewModel {
     let releasedDate: String?
     let isFavorite: Bool
     
-    init(model: Movie) {
+    init(model: Movie, movieLocalData: MovieLocalData) {
         self.averageVote = "\(model.voteAverage)"
         self.voteCount = "\(model.voteCount)"
         self.posterPath = model.posterPath
@@ -31,7 +31,7 @@ struct ItemSearchMovieViewModel {
         let genresName = movieGenres.compactMap { $0.name }.joined(separator: ", ")
         self.genresName = "Genres: \(genresName)"
         self.releasedDate = model.releaseDate
-        let isFavorite = MovieLocalData.shared.getMovieLocal(id: "\(model.id)")?.isFavorite ?? false
+        let isFavorite = movieLocalData.getMovieLocal(id: "\(model.id)")?.isFavorite ?? false
         self.isFavorite = isFavorite
     }
 }

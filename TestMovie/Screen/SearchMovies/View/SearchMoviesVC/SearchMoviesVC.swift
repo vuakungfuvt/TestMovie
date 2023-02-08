@@ -82,7 +82,9 @@ class SearchMoviesVC: UIViewController, XibViewController {
     }
     
     func initData() {
-        viewModel = SearchMoviesViewModel(service: MovieAPI())
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        viewModel = SearchMoviesViewModel(service: MovieAPI(), movieLocalData: MovieLocalData(context: context))
     }
     
     @objc func search(isShowLoading: Bool = false) {

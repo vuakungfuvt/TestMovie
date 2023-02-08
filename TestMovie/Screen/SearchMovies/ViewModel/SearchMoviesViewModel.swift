@@ -23,9 +23,11 @@ class SearchMoviesViewModel {
     var noticeUpdateFavorite: ((_ isFavorite: Bool) -> Void)?
     var reloadCell: ((_ indexPath: IndexPath, _ isFavorite: Bool) -> Void)?
     var showErrorMessage: ((_ message: String) -> Void)?
+    private let movieLocalData: MovieLocalData!
     
-    init(service: MovieDataService) {
+    init(service: MovieDataService, movieLocalData: MovieLocalData) {
         self.service = service
+        self.movieLocalData = movieLocalData
     }
     
     func searchMovies(key: String, success: @escaping ((_ totalPage: Int, _ movies: [Movie]) -> Void), failure: @escaping ((_ error: NetworkServiceError) -> Void)) {
@@ -63,7 +65,7 @@ class SearchMoviesViewModel {
     }
     
     func getItemViewModel(indexPath: IndexPath) -> ItemSearchMovieViewModel {
-        return ItemSearchMovieViewModel(model: movies[indexPath.row])
+        return ItemSearchMovieViewModel(model: movies[indexPath.row], movieLocalData: movieLocalData)
     }
     
     func refresh(key: String) {
@@ -89,7 +91,7 @@ class SearchMoviesViewModel {
         let movie = movies[indexPath.row]
         let isFavorite = GlobalVariables.shared.favoriteMovies["\(movie.id)"] ?? false
         GlobalVariables.shared.favoriteMovies["\(movie.id)"] = !isFavorite
-        MovieLocalData.shared.saveOrUpdate(movie: movie, isFavorite: !isFavorite, success: {}) { error in
+        movieLocalData.saveOrUpdate(movie: movie, isFavorite: !isFavorite, success: {}) { error in
             self.showErrorMessage?(error.localizedDescription)
         }
         self.reloadCell?(indexPath, !isFavorite)

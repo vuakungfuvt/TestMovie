@@ -11,12 +11,14 @@ class FavoriteMoviesViewModel {
     
     private var favoriteMovies = [MovieLocal]()
     var reloadTableView: (() -> Void)?
+    private let movieLocalData: MovieLocalData!
     
-    init() {
+    init(movieLocalData: MovieLocalData) {
+        self.movieLocalData = movieLocalData
     }
     
     func fetchData() {
-        favoriteMovies = MovieLocalData.shared.fetchAllData().filter { $0.isFavorite }
+        favoriteMovies = movieLocalData.fetchAllData().filter { $0.isFavorite }
         reloadTableView?()
     }
     

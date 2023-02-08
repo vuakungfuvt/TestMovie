@@ -59,7 +59,9 @@ class MovieDetailVC: UIViewController, XibViewController {
     }
     
     func initData() {
-        self.viewModel = MovieDetailViewModel(movieId: movieId ?? 1, service: MovieAPI())
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        self.viewModel = MovieDetailViewModel(movieId: movieId ?? 1, service: MovieAPI(), movieLocalData: MovieLocalData(context: context))
         self.view.showLoadingIndicator()
         self.viewModel?.getMovieDetail(success: { _ in
             DispatchQueue.main.async {

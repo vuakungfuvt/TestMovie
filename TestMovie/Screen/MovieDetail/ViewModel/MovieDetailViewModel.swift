@@ -15,11 +15,12 @@ class MovieDetailViewModel {
     var movieDetail: MovieDetail?
     var didUpdateFavoriteMovie: ((_ isFavorite: Bool) -> Void)?
     var showErrorMessage: ((_ message: String) -> Void)?
+    private let movieLocalData: MovieLocalData!
     
-    init(movieId: Int, service: MovieDataService) {
+    init(movieId: Int, service: MovieDataService, movieLocalData: MovieLocalData) {
         self.movieId = movieId
         self.service = service
-        
+        self.movieLocalData = movieLocalData
     }
     
     func getMovieDetail(success: @escaping ((_ movieDetail: MovieDetail) -> Void), failure: @escaping ((_ error: NetworkServiceError) -> Void)) {
@@ -33,7 +34,7 @@ class MovieDetailViewModel {
     }
     
     func getFavorite() -> Bool {
-        return MovieLocalData.shared.getMovieLocal(id: "\(movieId)")?.isFavorite ?? false
+        return movieLocalData.getMovieLocal(id: "\(movieId)")?.isFavorite ?? false
     }
     
     func setFavorite() {
@@ -41,7 +42,7 @@ class MovieDetailViewModel {
         guard let movieDetail = self.movieDetail else {
             return
         }
-        MovieLocalData.shared.saveOrUpdate(movie: movieDetail, isFavorite: !isFavorite, success: {}, failure: { _ in })
+        movieLocalData.saveOrUpdate(movie: movieDetail, isFavorite: !isFavorite, success: {}, failure: { _ in })
         GlobalVariables.shared.favoriteMovies[movieDetail.getId()] = !isFavorite
         self.didUpdateFavoriteMovie?(!isFavorite)
     }

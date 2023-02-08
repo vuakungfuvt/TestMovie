@@ -44,5 +44,12 @@ final class HomeViewModelTest: XCTestCase {
         }
         wait(for: [expectationFailure], timeout: 1)
     }
+    
+    func testUpdateFavoriteMovie() {
+        let movie1 = Movie(adult: true, backdropPath: "", genreIDS: [1, 2], id: 1, originalTitle: "original title 1", overview: "overview 1", popularity: 1, posterPath: "", releaseDate: "01/01/2023", title: "title 1", video: false, voteAverage: 3.5, voteCount: 5)
+        viewModel.updateFavoriteMovie(movie: movie1, isFavorite: true)
+        let movieLocal = localData.getMovieLocal(id: "1")
+        XCTAssertTrue(movieLocal?.isFavorite ?? false)
+    }
 }
  

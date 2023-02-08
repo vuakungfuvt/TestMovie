@@ -9,8 +9,12 @@
 import Foundation
 import CoreData
 
-@objc(MovieLocal)
+//@objc(MovieLocal)
 public class MovieLocal: NSManagedObject {
     
-    
+    convenience init(context: NSManagedObjectContext) {
+        let entity = NSEntityDescription.entity(forEntityName: "MovieLocal", in: context)!
+        self.init(entity: entity, insertInto: context)
+    }
+
 }
