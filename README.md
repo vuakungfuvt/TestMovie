@@ -10,7 +10,7 @@
 # TestMovie
 
 <p align="row">
-<img src= "images/app-demo.gif" width="400" >
+<img src= "images/app-demo.GIF" width="400" >
 </p>
 
 ## Features
